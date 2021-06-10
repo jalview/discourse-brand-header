@@ -6,6 +6,9 @@ logo_url:
   default: ""
 mobile_logo_url:
   default: ""
+logo_title_text:
+  default: ""
+  description: "'title' attribute for the logo link, usually appears as a tooltip. Defaults to brand_name."
 links:
   type: list
   list_type: simple

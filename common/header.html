@@ -113,6 +113,7 @@
 
       const logoUrl = settings.logo_url || "";
       const title = settings.brand_name;
+      const logoLinkTitle = settings.logo_title_text || title || "";
 
       if (showMobileLogo) {
         return h('img#brand-logo.logo-big', { key: 'logo-mobile', attributes: { src: mobileLogoUrl, alt: title } });
@@ -124,7 +125,7 @@
     },
 
     html() {
-      return h('a', { attributes: { href: settings.website_url } }, this.logo());
+      return h('a', { attributes: { href: settings.website_url, title: logoLinkTitle } }, this.logo());
     },
 
     click(e) {
