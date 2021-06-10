@@ -48,7 +48,8 @@
               href: values[1].trim(),
               omitSpan: true,
               attributes: {
-                target: (values[2] || '').trim()
+                target: (values[2] || '').trim(),
+                title: (values[3] || values[0].trim())
               }
           });
         });
@@ -68,7 +69,8 @@
               href: values[1].trim(),
               omitSpan: true,
               attributes: {
-                target: (values[2] || '').trim()
+                target: (values[2] || '').trim(),
+                title: (values[3] || '').trim()
               }
           });
         });
