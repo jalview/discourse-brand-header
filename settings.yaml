@@ -13,12 +13,12 @@ links:
   type: list
   list_type: simple
   default: ""
-  description: "Format: name,url,target (optional)"
+  description: "Format: name,url,target (optional),title_attribute (optional)"
 icons:
   type: list
   list_type: simple
   default: ""
-  description: "Format: icon-name,url,target (optional)"
+  description: "Format: icon-name,url,target (optional),title_attribute (optional)"
 custom_font_awesome_icons:
   type: list
   list_type: simple
