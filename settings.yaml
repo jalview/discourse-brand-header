@@ -36,6 +36,12 @@ links:
           - _self
           - _parent
           - _top
+      title:
+        type: string
+        required: false
+        validations:
+          min_length: 0
+          max_length: 100
 
 icons:
   type: objects
@@ -64,6 +70,12 @@ icons:
           - _self
           - _parent
           - _top
+      title:
+        type: string
+        required: false
+        validations:
+          min_length: 0
+          max_length: 100
 
 custom_font_awesome_icons:
   type: list

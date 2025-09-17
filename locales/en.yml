@@ -14,6 +14,9 @@ en:
             target:
               label: Target
               description: The target attribute for the link
+            title:
+              label: Title
+              description: The title attribute value
       icons:
         description: Icon links to be displayed in the header
         schema:
@@ -27,5 +30,8 @@ en:
             target:
               label: Target
               description: The target attribute for the link
+            title:
+              label: Title
+              description: The title attribute value
       custom_font_awesome_icons: List of FontAwesome 6 icons used in this theme component
       show_bar_on_mobile: When enabled, the desktop version of the header bar will be displayed on mobile devices
