@@ -55,11 +55,13 @@ export default class BrandHeaderContents extends Component {
             <li>
               {{#if link.title}}
               <a href={{link.url}} target={{link.target}} title={{link.title}}>
-              {{else}}
-              <a href={{link.url}} target={{link.target}}>
-              {{/if}}
                 {{link.text}}
               </a>
+              {{else}}
+              <a href={{link.url}} target={{link.target}}>
+                {{link.text}}
+              </a>
+              {{/if}}
             </li>
           {{/each}}
         </ul>
@@ -73,11 +75,13 @@ export default class BrandHeaderContents extends Component {
             <li>
               {{#if iconLink.title}}
               <a href={{iconLink.url}} target={{iconLink.target}} title={{iconLink.title}}>
-              {{else}}
-              <a href={{iconLink.url}} target={{iconLink.target}}>
-              {{/if}}
                 {{dIcon iconLink.icon_name}}
               </a>
+              {{else}}
+              <a href={{iconLink.url}} target={{iconLink.target}}>
+                {{dIcon iconLink.icon_name}}
+              </a>
+              {{/if}}
             </li>
           {{/each}}
         </ul>
