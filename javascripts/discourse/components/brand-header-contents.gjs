@@ -53,7 +53,7 @@ export default class BrandHeaderContents extends Component {
         <ul class="nav {{if this.shouldShow 'nav-pills'}}">
           {{#each settings.links as |link|}}
             <li>
-              <a href={{link.url}} target={{link.target}} {{if link.title (concat (concat 'title=\"' link.title) '\"')}}>
+              <a href={{link.url}} target={{link.target}} title={{link.title}}>
                 {{link.text}}
               </a>
             </li>
@@ -67,7 +67,7 @@ export default class BrandHeaderContents extends Component {
         <ul class="icons">
           {{#each settings.icons as |iconLink|}}
             <li>
-              <a href={{iconLink.url}} target={{iconLink.target}} {{if iconLink.title (concat (concat 'title=\"' iconLink.title) '\"')}}>
+              <a href={{iconLink.url}} target={{iconLink.target}} title={{iconLink.title}}>
                 {{dIcon iconLink.icon_name}}
               </a>
             </li>
