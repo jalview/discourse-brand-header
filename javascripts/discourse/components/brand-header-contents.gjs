@@ -53,15 +53,9 @@ export default class BrandHeaderContents extends Component {
         <ul class="nav {{if this.shouldShow 'nav-pills'}}">
           {{#each settings.links as |link|}}
             <li>
-              {{#if link.title}}
-              <a href={{link.url}} target={{link.target}} title={{link.title}}>
+              <a href={{link.url}} target={{link.target}} {{if link.title "title={{link.title}}"}}>
                 {{link.text}}
               </a>
-              {{else}}
-              <a href={{link.url}} target={{link.target}}>
-                {{link.text}}
-              </a>
-              {{/if}}
             </li>
           {{/each}}
         </ul>
@@ -73,15 +67,9 @@ export default class BrandHeaderContents extends Component {
         <ul class="icons">
           {{#each settings.icons as |iconLink|}}
             <li>
-              {{#if iconLink.title}}
-              <a href={{iconLink.url}} target={{iconLink.target}} title={{iconLink.title}}>
+              <a href={{iconLink.url}} target={{iconLink.target}} {{if iconLink.title "title={{iconLink.title}}"}}>
                 {{dIcon iconLink.icon_name}}
               </a>
-              {{else}}
-              <a href={{iconLink.url}} target={{iconLink.target}}>
-                {{dIcon iconLink.icon_name}}
-              </a>
-              {{/if}}
             </li>
           {{/each}}
         </ul>
